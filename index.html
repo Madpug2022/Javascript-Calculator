@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Calculadora</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+  <script src="https://kit.fontawesome.com/d9005a0d59.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <div class="menu-body">
+    <details class="menu-details">
+      <summary class="summary">Menu</summary>
+      <nav class="menu">
+        <button class="history" type="button">Log</button>
+        <button class="science" type="button">Scientific</button>
+        <button class="change" type="button">Exchange</button>
+      </nav>
+    </details>
+  </div>
+<div class="container">
+
+<div class="historyBody hidden"><ol class="historyList">Historial
+  <li class="historyItem"></li>
+</ol></div>
+
+<div class="scienceBody hidden">
+
+    <button type="button" class="boton2 sci" data-sin>sin</button>
+    <button type="button" class="boton2 sci" data-cos>cos</button>
+    <button type="button" class="boton2 sci" data-tan>tan</button>
+    <button type="button" class="boton2 sci" data-EXP>EXP</button>
+
+    <button type="button" class="boton2 sci" data-ln>ln</button>
+    <button type="button" class="boton2 sci" data-log>log</button>
+    <button type="button" class="boton2 sci" data-root>√</button>
+    <button type="button" class="boton2 sci" data-square>^</button>
+
+</div>
+
+<div class="icon"><i class="uil uil-sun"></i><span>      </span><i class="uil uil-moon"></i></div>
+<div class="exterior">
+
+  <div class="currencyBody hidden">
+    <label class="night_day_mode">
+      <input id="botonNigth" type="checkbox">
+      <span class="slider round"></span>
+    </label>
+    <h2 class="currencyTittle">Money Exchanger</h2>
+    <div class="ratio">
+      <div class="ratio1"></div>
+      <div class="ratio2"></div>
+    </div>
+    <div class="currencyMain">
+      <div class="inicial">
+        <div class="currencyOpcion"><select></select></div>
+        <div class="currencyInput"><input type="number"></div>
+      </div>
+
+      <div class="objetivo">
+        <div class="currencyOpcion"><select></select></div>
+        <div class="currencyInput"><input disabled type="number"></div>
+      </div>
+    </div>
+    <button class="conversion">Convert</button>
+  </div>
+
+  <div class="calculadora">
+    <label class="night_day_mode">
+      <input id="botonNigth" type="checkbox">
+      <span class="slider round"></span>
+    </label>
+    <section>
+      <div class="display">
+        <input type="text" name="display" class="pantalla" readonly>
+      </div>
+      <div class="botonera">
+        <button type="button" class="boton operador" data-clear>C</button>
+        <button type="button" class="boton operador" data-change>±</button>
+        <button type="button" class="boton operador" data-percent>%</button>
+        <button type="button" class="boton operador" data-operator="/">÷</button>
+
+        <button type="button" class="boton" data-number="7">7</button>
+        <button type="button" class="boton" data-number="8">8</button>
+        <button type="button" class="boton" data-number="9">9</button>
+        <button type="button" class="boton operador" data-operator="*">x</button>
+
+        <button type="button" class="boton" data-number="4">4</button>
+        <button type="button" class="boton" data-number="5">5</button>
+        <button type="button" class="boton" data-number="6">6</button>
+        <button type="button" class="boton operador" data-operator="-">-</button>
+
+        <button type="button" class="boton" data-number="1">1</button>
+        <button type="button" class="boton" data-number="2">2</button>
+        <button type="button" class="boton" data-number="3">3</button>
+        <button type="button" class="boton operador" data-operator="+">+</button>
+
+        <button type="button" class="boton" data-number="0">0</button>
+        <button type="button" class="boton" data-number=".">.</button>
+        <button type="button" class="boton operador equal"data-equal>=</button>
+      </div>
+    </section>
+  </div>
+</div>
+</div>
+<script src="script.js"></script>
+</body>
+
+</html>
